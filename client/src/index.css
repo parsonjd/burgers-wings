@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(245, 239, 239);
+}
 nav li {
   letter-spacing: 2px;
 }
@@ -25,5 +28,18 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+}
+
+.input-field input[type="text"]:focus + label {
+  color: rgb(68, 43, 43) !important;
+}
+
+.address {
+  font-size: 3rem;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+h1 {
+  font-weight: bolder;
 }
