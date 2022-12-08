@@ -1,12 +1,27 @@
+.app {
+  min-height: 100vh;
+}
+
 body {
-  background-color: rgb(245, 239, 239);
+  background-color: rgb(233, 229, 229);
+  margin: 0px;
 }
 nav li {
   letter-spacing: 2px;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
+.title {
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin: 3rem;
+}
+
 a {
-  color: var(--turquoise);
   text-decoration: none;
   font-weight: bold;
 }
@@ -17,6 +32,7 @@ a:hover {
 
 header {
   overflow: hidden;
+  background-image: url("./assets/wood.jpg");
 }
 
 header img {
@@ -42,4 +58,21 @@ header img {
 
 h1 {
   font-weight: bolder;
+}
+
+.social-media {
+  margin: 30px;
+}
+
+button {
+  letter-spacing: 2px;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.footer {
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }

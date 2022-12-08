@@ -6,8 +6,8 @@ function Navbar() {
   function showNavigation() {
     return (
       <nav>
-        <div className="nav-wrapper #4e342e brown darken-2">
-          <ul className="flex-row" width="100%">
+        <div className="nav-wrapper #ffb74d orange lighten-2">
+          <ul className="flex-row nav-links" width="100%">
             <li>
               <Link to="/">HOME</Link>
             </li>
@@ -25,7 +25,7 @@ function Navbar() {
             )}
 
             {Auth.loggedIn() ? (
-              <li>
+              <li className="">
                 <Link to="/orderHistory">ORDER HISTORY</Link>
               </li>
             ) : (
@@ -46,7 +46,14 @@ function Navbar() {
     );
   }
 
-  return <div>{showNavigation()};</div>;
+  return (
+    <div>
+      <header>
+        <h1 className="center-align white-text title">Burgers & Wings</h1>
+      </header>
+      <nav>{showNavigation()}</nav>
+    </div>
+  );
 }
 
 export default Navbar;
