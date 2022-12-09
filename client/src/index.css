@@ -40,10 +40,29 @@ header img {
   transform: translateX(-50%);
 }
 
+nav {
+  margin-bottom: 2rem;
+}
+
+.go-back {
+  font-size: 1.2rem;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.login {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.signup {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 .input-field input[type="text"]:focus + label {

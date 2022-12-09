@@ -31,7 +31,7 @@ function Signup() {
   return (
     <div className="container ">
       <div className="row ">
-        <h3 className="center-align brown-text">Signup</h3>
+        <h3 className="center-align brown-text signup">Signup</h3>
         <form className="col s12" onSubmit={handleFormSubmit}>
           <div className="row flex-row">
             <div className="input-field col s10">

@@ -32,11 +32,11 @@ function Login() {
   return (
     <div className="container">
       <div className="row">
-        <Link to="/signup" className="brown-text flex-row">
+        <Link to="/signup" className="brown-text flex-row go-back">
           ← Do you have an account? If not, signup first!
         </Link>
 
-        <h3 className="center-align brown-text">Login</h3>
+        <h3 className="center-align brown-text login">Login</h3>
         <form className="col s12" onSubmit={handleFormSubmit}>
           <div className="row flex-row">
             <div className="input-field col s10">
