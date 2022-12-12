@@ -7,7 +7,7 @@ function Navbar() {
     return (
       <nav>
         <div className="nav-wrapper #ffb74d orange lighten-2">
-          <ul className="flex-row nav-links" width="100%">
+          <ul className="flex-row brown-text" width="100%">
             <li>
               <Link to="/">HOME</Link>
             </li>

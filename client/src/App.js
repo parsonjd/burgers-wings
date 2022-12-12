@@ -7,6 +7,7 @@ import {
   InMemoryCache,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import { StoreProvider } from "./utils/GlobalState";
 import Auth from "./utils/auth";
 
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Menu from "./pages/Menu";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 
@@ -44,15 +46,18 @@ function App() {
       <Router>
         <div>
           <div className="app">
-            <Navbar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/contact" component={Contact} />
-              <Route path="*" component={NoMatch} />
-            </Switch>
-            <Footer />
+            <StoreProvider>
+              <Navbar />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/menu" component={Menu} />
+                <Route exact path="/contact" component={Contact} />
+                <Route path="*" component={NoMatch} />
+              </Switch>
+              <Footer />
+            </StoreProvider>
           </div>
         </div>
       </Router>

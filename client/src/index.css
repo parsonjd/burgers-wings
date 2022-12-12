@@ -13,6 +13,12 @@ nav li {
 html,
 body {
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 15px;
 }
 
 .title {
@@ -54,11 +60,21 @@ nav {
   justify-content: center;
 }
 
+.categories {
+  margin-top: 1rem;
+}
+
+.category {
+  font-weight: bold;
+  font-size: 10px;
+}
+
 .login {
   font-weight: bolder;
   letter-spacing: 2px;
   margin-bottom: 50px;
 }
+
 .signup {
   font-weight: bolder;
   letter-spacing: 2px;
@@ -91,6 +107,7 @@ footer {
   margin-top: 4rem;
   padding: 2rem;
 }
+
 .footer {
   font-size: 1.5rem;
   margin-top: 2rem;
