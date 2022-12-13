@@ -2,6 +2,17 @@
   min-height: 100vh;
 }
 
+:root {
+  --navy: #232f3e;
+  --orange: #fa9802;
+  --turquoise: #4db6ac;
+  --red: #f22f1d;
+  --green: #60a62e;
+
+  --light: #fafafa;
+  --dark: #272f32;
+}
+
 body {
   background-color: rgb(233, 229, 229);
   margin: 0px;
@@ -119,4 +130,79 @@ footer {
 .footer {
   font-size: 1.5rem;
   margin-top: 2rem;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 20%;
+  max-width: 30%;
+  max-height: 60%;
+  background-color: var(--light);
+  overflow: auto;
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.5rem;
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+}
+
+.cart .close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: #4db6ac;
+}
+
+.cart .close:hover {
+  text-decoration: underline;
+}
+
+.cart-closed {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgb(165, 108, 42);
+  border-radius: 50%;
+  padding: 0.475em;
+  width: 60px;
+  height: 60px;
+}
+
+.cart-closed:hover {
+  transform: rotate(15deg);
+}
+
+.cart img {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.cart input {
+  width: 50px;
+  padding: 0;
+  margin: 0 0.5rem 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    position: relative;
+    max-width: 100%;
+    max-height: auto;
+    box-shadow: none;
+    background-color: inherit;
+  }
+  */ .cart-closed {
+    position: relative;
+    margin: 0 auto;
+  }
 }

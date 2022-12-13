@@ -36,11 +36,11 @@ function MenuItem(foodItem) {
 
   return (
     <div className="col s12 m6 l4">
-      <div className="card large #bcaaa4 brown lighten-3">
+      <div className="card large #a1887f brown lighten-2">
         <div className="card-image">
-          {/* <Link to={`/items/${_id}`}>
+          <Link to={`/items/${_id}`}>
             <img alt={name} src={`/images/${image}`} />
-          </Link> */}
+          </Link>
         </div>
         <h5 className="card-title center-align menu-title">{name}</h5>
         <div className="card-content">
