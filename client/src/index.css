@@ -64,9 +64,16 @@ nav {
   margin-top: 1rem;
 }
 
-.category {
+.menu-title {
   font-weight: bold;
-  font-size: 10px;
+}
+
+.menu-items {
+  margin-top: 3rem;
+}
+
+.price {
+  font-weight: bold;
 }
 
 .login {

@@ -10,6 +10,21 @@ const resolvers = {
     categories: async () => {
       return await Category.find();
     },
+    items: (parent, { category, name }) => {
+      const params = {};
+
+      if (category) {
+        params.category = category;
+      }
+
+      if (name) {
+        params.name = {
+          $regex: name,
+        };
+      }
+
+      return Item.find(params).populate("category");
+    },
 
     user: async (parent, args, context) => {
       if (context.user) {

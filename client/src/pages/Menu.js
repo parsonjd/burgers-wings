@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import ItemList from "../components/ItemList";
+import ItemList from "../components/ItemList";
 import CategoryMenu from "../components/CategoryMenu";
 // import Cart from "../components/Cart";
 import Auth from "../utils/auth";
@@ -15,8 +15,8 @@ const Menu = () => (
       </div>
     )}
     <CategoryMenu />
-    {/* <ItemList />
-    <Cart /> */}
+    <ItemList />
+    {/* <Cart /> */}
   </div>
 );
 

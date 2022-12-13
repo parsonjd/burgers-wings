@@ -42,7 +42,7 @@ function CategoryMenu() {
     <div className="flex-row categories">
       {categories.map((foodItem) => (
         <button
-          className="btn-large brown category"
+          className="btn-large brown"
           type="button"
           key={foodItem._id}
           onClick={() => {
@@ -52,6 +52,16 @@ function CategoryMenu() {
           {foodItem.name}
         </button>
       ))}
+
+      <a
+        className="btn-large brown"
+        type="button"
+        href="/Menu"
+        style={{ textDecoration: "none", fontWeight: "normal" }}
+      >
+        {" "}
+        Full Menu
+      </a>
     </div>
   );
 }
