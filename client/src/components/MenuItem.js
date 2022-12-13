@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { idbPromise } from "../utils/helpers";
 import { useStoreContext } from "../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../utils/actions";
@@ -38,9 +37,7 @@ function MenuItem(foodItem) {
     <div className="col s12 m6 l4">
       <div className="card large #a1887f brown lighten-2">
         <div className="card-image">
-          <Link to={`/items/${_id}`}>
-            <img alt={name} src={`/images/${image}`} />
-          </Link>
+          <img alt={name} src={`/images/${image}`} />
         </div>
         <h5 className="card-title center-align menu-title">{name}</h5>
         <div className="card-content">

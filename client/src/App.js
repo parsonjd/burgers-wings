@@ -17,7 +17,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Menu from "./pages/Menu";
-import Detail from "./pages/Detail";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 
@@ -54,7 +53,6 @@ function App() {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/menu" component={Menu} />
-                <Route exact path="/items/:id" component={Detail} />
                 <Route exact path="/contact" component={Contact} />
                 <Route path="*" component={NoMatch} />
               </Switch>

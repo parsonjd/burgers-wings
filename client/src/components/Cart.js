@@ -65,16 +65,16 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed center-align" onClick={toggleCart}>
-        <i className="small material-icons" style={{ color: "var(--navy)" }}>
-          shopping_cart
-        </i>
+        <span role="img" aria-label="trash">
+          🛒
+        </span>
       </div>
     );
   }
 
   return (
     <div className="cart">
-      <div className="close" onClick={toggleCart}>
+      <div className="close brown-text" onClick={toggleCart}>
         [close]
       </div>
       <h2>Shopping Cart</h2>
@@ -88,7 +88,7 @@ const Cart = () => {
             {Auth.loggedIn() ? (
               <div className="row">
                 <button
-                  className="waves-effect waves-light btn"
+                  className="btn brown"
                   type="button"
                   onClick={submitCheckout}
                 >
@@ -101,7 +101,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <p>You haven't added anything to your cart yet... aren't you hungry?</p>
+        <p>Your cart is empty.</p>
       )}
     </div>
   );

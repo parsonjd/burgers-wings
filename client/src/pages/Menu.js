@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ItemList from "../components/ItemList";
 import CategoryMenu from "../components/CategoryMenu";
-// import Cart from "../components/Cart";
+import Cart from "../components/Cart";
 import Auth from "../utils/auth";
 
 const Menu = () => (
@@ -16,7 +16,7 @@ const Menu = () => (
     )}
     <CategoryMenu />
     <ItemList />
-    {/* <Cart /> */}
+    <Cart />
   </div>
 );
 
