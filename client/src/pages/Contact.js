@@ -5,7 +5,7 @@ function Contact() {
     <div className="row flex-row">
       <section>
         <div className="flex row brown-text">
-          <h1 className="center-align">Burgers & Wings</h1>
+          <h2 className="center-align">Burger & Wings Ville</h2>
           <p className="center-align address">
             1212 Best Burger Road
             <br />

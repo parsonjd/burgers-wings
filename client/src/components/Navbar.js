@@ -6,7 +6,7 @@ function Navbar() {
   function showNavigation() {
     return (
       <nav>
-        <div className="nav-wrapper #ffb74d orange lighten-2">
+        <div className="nav-wrapper #ff9100 orange accent-3">
           <ul className="flex-row brown-text" width="100%">
             <li>
               <Link to="/">HOME</Link>
@@ -49,7 +49,7 @@ function Navbar() {
   return (
     <div>
       <header>
-        <h1 className="center-align white-text title">Burgers & Wings</h1>
+        <h1 className="center-align title">Burger & Wings Ville</h1>
       </header>
       <nav>{showNavigation()}</nav>
     </div>

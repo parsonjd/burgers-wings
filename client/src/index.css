@@ -25,6 +25,7 @@ body {
   font-weight: bolder;
   letter-spacing: 3px;
   margin: 3rem;
+  color: rgb(197, 178, 169);
 }
 
 a {
@@ -93,7 +94,7 @@ nav {
 }
 
 .address {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 100px;
   margin-top: 100px;
 }

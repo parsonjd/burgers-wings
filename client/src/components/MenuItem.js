@@ -36,7 +36,7 @@ function MenuItem(foodItem) {
 
   return (
     <div className="col s12 m6 l4">
-      <div className="card large #d7ccc8 brown lighten-4">
+      <div className="card large #bcaaa4 brown lighten-3">
         <div className="card-image">
           {/* <Link to={`/items/${_id}`}>
             <img alt={name} src={`/images/${image}`} />
@@ -50,7 +50,11 @@ function MenuItem(foodItem) {
         </div>
         <div className="card-action center-align">
           {Auth.loggedIn() ? (
-            <button className="btn brown" type="button" onClick={addToCart}>
+            <button
+              className="btn-flat #8d6e63 brown lighten-1 white-text"
+              type="button"
+              onClick={addToCart}
+            >
               Add to Cart
             </button>
           ) : null}
