@@ -12,7 +12,7 @@ function OrderHistory() {
   }
 
   return (
-    <div className="container">
+    <div>
       <Link className="brown-text" to="/Menu">
         ← Back to Menu
       </Link>
