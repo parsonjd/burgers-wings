@@ -7,7 +7,7 @@ function Navbar() {
     return (
       <nav>
         <div className="nav-wrapper #ff9100 orange accent-3">
-          <ul className="flex-row brown-text" width="100%">
+          <ul className="flex-row nav-links brown-text" width="100%">
             <li>
               <Link to="/">HOME</Link>
             </li>
@@ -25,7 +25,7 @@ function Navbar() {
             )}
 
             {Auth.loggedIn() ? (
-              <li className="">
+              <li className="remove">
                 <Link to="/orderHistory">ORDER HISTORY</Link>
               </li>
             ) : (

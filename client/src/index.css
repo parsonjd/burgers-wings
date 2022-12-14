@@ -11,8 +11,9 @@ body {
   background-color: rgb(233, 229, 229);
   margin: 0px;
 }
-nav li {
-  letter-spacing: 2px;
+
+nav {
+  margin-bottom: 2rem;
 }
 
 html,
@@ -50,10 +51,6 @@ header {
 header img {
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-nav {
-  margin-bottom: 2rem;
 }
 
 .go-back {
@@ -187,7 +184,12 @@ footer {
   margin: 0 0.5rem 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+.order-price {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* @media screen and (max-width: 768px) {
   .cart {
     position: relative;
     max-width: 100%;
@@ -195,8 +197,14 @@ footer {
     box-shadow: none;
     background-color: inherit;
   }
-  */ .cart-closed {
+  .cart-closed {
     position: relative;
     margin: 0 auto;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  .remove {
+    display: none;
   }
 }
