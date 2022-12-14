@@ -77,7 +77,7 @@ const Cart = () => {
       <div className="close brown-text" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
+      <h2>Cart</h2>
       {state.cart.length ? (
         <div className="row">
           {state.cart.map((foodItem) => (
