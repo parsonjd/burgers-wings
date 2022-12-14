@@ -13,6 +13,8 @@
   Clone the repository, run `npm install` and then `npm run develop` to load the application.
 ## Usage
   The live demo for the app is located at:
+  
+  [![burgers-wings.png](https://i.postimg.cc/hPRW9mrn/burgers-wings.png)](https://postimg.cc/PNyRHP9V)
 ## License
     This application is covered by the APACHE license.
 ## Contributing
