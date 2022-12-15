@@ -11,7 +11,7 @@ const resolvers = {
     categories: async () => {
       return await Category.find();
     },
-    items: (parent, { category, name }) => {
+    items: async (parent, { category, name }) => {
       const params = {};
 
       if (category) {
@@ -24,7 +24,7 @@ const resolvers = {
         };
       }
 
-      return Item.find(params).populate("category");
+      return await Item.find(params).populate("category");
     },
     item: (parent, { _id }) => Item.findById(_id).populate("category"),
     user: async (parent, args, context) => {
